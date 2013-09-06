@@ -35,7 +35,7 @@ Archimedes uses [Isomer](https://github.com/pguelpa/isomer) for managing it's co
     base = Rails.env
     config = Archimedes::Config.from(:yaml, file: file, base: base)
 
-    ARCHIMEDES = Archimedes::Base.new(config)
+    ARCHIMEDES = Archimedes.new(config)
 
 ##### Send some metrics
 
