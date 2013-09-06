@@ -33,20 +33,22 @@ Archimedes uses [Isomer](https://github.com/pguelpa/isomer) for managing it's co
 
     file = Rails.root.join('config', 'archimedes.yml')
     base = Rails.env
-    Archimedes.config = Archimedes::Config.from(:yaml, file: file, base: base)
+    config = Archimedes::Config.from(:yaml, file: file, base: base)
+
+    ARCHIMEDES = Archimedes::Base.new(config)
 
 ##### Send some metrics
 
-    Archimedes.increment('foo')
+    ARCHIMEDES.increment('foo')
 
-    Archimedes.decrement('foo')
+    ARCHIMEDES.decrement('foo')
 
-    Archimedes.count('foo', 30)
+    ARCHIMEDES.count('foo', 30)
 
-    Archimedes.gauge('production.deployments', 1)
+    ARCHIMEDES.gauge('production.deployments', 1)
 
-    Archimedes.time('foo') do
-        zomg_long_task
+    ARCHIMEDES.time('foo') do
+      zomg_long_task
     end
 
 ## Contributing
