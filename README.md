@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/shopkeep/archimedes.png?branch=master)](https://travis-ci.org/shopkeep/archimedes)
 
-A lightweight wrapper for StatsD and it's configuration.
+A lightweight wrapper for StatsD and its configuration.
 
 ## Installation
 
