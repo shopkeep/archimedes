@@ -1,6 +1,6 @@
 # Archimedes
 
-[![Build Status](https://travis-ci.org/shopkeep/archimedes.png?branch=master)](https://travis-ci.org/shopkeep/archimedes)
+[![Build Status](https://travis-ci.org/shopkeep/archimedes.png?branch=master)](https://travis-ci.org/shopkeep/archimedes) [![Code Climate](https://codeclimate.com/github/shopkeep/archimedes.png)](https://codeclimate.com/github/shopkeep/archimedes)
 
 A lightweight wrapper for StatsD and its configuration.
 
