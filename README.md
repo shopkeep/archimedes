@@ -47,6 +47,8 @@ Archimedes uses [Isomer](https://github.com/pguelpa/isomer) for managing it's co
 
     ARCHIMEDES.gauge('production.deployments', 1)
 
+    ARCHIMEDES.timing('foo', 300)
+
     ARCHIMEDES.time('foo') do
       zomg_long_task
     end

@@ -1,4 +1,4 @@
-Copyright (c) 2013 ShopKeep POS
+Copyright (c) 2016 ShopKeep.com Inc.
 
 MIT License
 
