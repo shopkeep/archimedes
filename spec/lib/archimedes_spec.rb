@@ -66,4 +66,16 @@ describe Archimedes do
       @archimedes.time('sk.time', 0.1) {}
     end
   end
+
+  describe '.timing' do
+    it 'defaults the duration to 1' do
+      @archimedes.service.expects(:timing).with('sk.timing', 1)
+      @archimedes.timing('sk.timing')
+    end
+
+    it 'passes the duration along if present' do
+      @archimedes.service.expects(:timing).with('sk.timing', 320)
+      @archimedes.timing('sk.timing', 320)
+    end
+  end
 end

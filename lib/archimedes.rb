@@ -34,4 +34,8 @@ class Archimedes
     end
   end
 
+  def timing(metric, duration = 1)
+    service.timing(metric, duration)
+  end
+
 end
