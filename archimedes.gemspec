@@ -8,12 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Archimedes::VERSION
   spec.authors       = ['Duncan Grazier', 'Paul Guelpa', 'Sander Hartlage']
   spec.email         = ['itsmeduncan@gmail.com', 'paul.guelpa@gmail.com', 'sander.hartlage@gmail.com']
-  spec.description   = %q{A lightweight wrapper for statsd-ruby}
-  spec.summary       = %q{Wrap up the configration, and usage of StatsD}
+  spec.description   = 'A lightweight wrapper for statsd-ruby'
+  spec.summary       = 'Wrap up the configration, and usage of StatsD'
   spec.homepage      = 'https://www.github.com/shopkeep/archimedes'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']

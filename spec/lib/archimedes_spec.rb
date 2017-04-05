@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Archimedes do
-
   before do
     @config = stub(host: 'example.org', port: 9999, namespace: 'test.archimedes')
     @archimedes = described_class.new(@config)

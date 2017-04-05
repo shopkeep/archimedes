@@ -3,7 +3,6 @@ require 'archimedes/version'
 require 'statsd'
 
 class Archimedes
-
   attr_reader :service
 
   def initialize(config)
@@ -37,5 +36,4 @@ class Archimedes
   def timing(metric, duration = 1)
     service.timing(metric, duration)
   end
-
 end
