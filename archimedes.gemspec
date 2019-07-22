@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov', '~> 0.7.1'
 
   spec.add_dependency 'isomer', '~> 0.1.3'
-  spec.add_dependency 'statsd-ruby', '~> 1.2.1'
+  spec.add_dependency 'statsd-ruby', '>= 1.2.1', '< 1.5.0'
 end
